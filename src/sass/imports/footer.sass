@@ -1,0 +1,88 @@
+footer
+    width: 100%;
+    .footer-top
+        width: 100%
+        display: flex;
+        justify-content: space-between
+        background-color: $footer-top
+        position: relative;
+        .terms
+            display: flex;
+            align-items: center;
+            padding-left: calculateWidth(30)
+            li 
+                padding: calculateWidth(30)
+                &:first-child
+                    border-right: 1px solid $gray
+        .lang-switcher
+            background-color: $lang-switcher
+            display: flex;
+            flex-wrap: wrap
+            padding: 0 calculateWidth(35)
+            position: absolute
+            height: auto
+            min-height: 100%;
+            right: 0
+            max-width: calculateWidth(250)
+            li
+                padding: calculateHeight(30) 0;
+                display: flex
+                width: 100%
+                margin-left: calculateWidth(14 + 35)
+                align-items: center;
+                display: none;
+                &:first-child
+                    margin-left: initial
+                    position: relative
+                    display: flex
+                    a
+                        margin-right: calculateWidth(70)
+                        &::after
+                            position: absolute
+                            content: ' '
+                            width: 8px
+                            height: 8px;
+                            border-left: 2px solid $arrow;
+                            border-bottom: 2px solid $arrow;
+                            transform: rotate(-45deg)
+                            top: 50%;
+                            margin-top: -4px
+                            right: 0
+                .lang-img
+                    width: calculateWidth(14)
+                    height: calculateWidth(14)
+                    margin-right: calculateWidth(35)
+                    display: flex;
+                    align-items: center
+                    justify-content: center
+                a
+                    color: $white
+            
+            
+    .footer-bottom
+        width: 100%;
+        display: flex;
+        align-items: center
+        padding: calculateHeight(65) calculateWidth(88)
+        background-color: $footer-bottom
+        .main-logo
+            a
+                img
+                    width: calculateWidth(190)
+        .copyright 
+            display: flex;
+            flex-wrap: wrap
+            margin-left: calculateWidth(80)
+            span
+                width: 100%;
+                color: $white;
+        .red-logo
+            margin-left: auto
+            background-color: $red;
+            width: calculateWidth(75);
+            height: calculateWidth(75);
+            border-radius: 5px
+            display: flex
+            align-items: center;
+            justify-content: center
+        

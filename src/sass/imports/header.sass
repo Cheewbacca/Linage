@@ -1,0 +1,46 @@
+header
+    display: flex;
+    align-items: center;
+    justify-content: flex-start
+    border-bottom: 1px solid $border-color
+    .header-logo
+        width: calculateWidth(90)
+        height: calculateHeight(75)
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: $dark-blue;
+    nav
+        margin-left: calculateWidth(55)
+        ul 
+            display: flex;
+            li 
+                margin-right: calculateWidth(82)
+                a
+                    transition: color .3s
+                    color: $links-light
+                    &:hover
+                        color: $active-blue
+                    
+    .actions-bar
+        margin-left: auto
+        height: calculateHeight(75)
+        ul 
+            display: flex;
+            height: 100%;
+            li 
+                height: 100%;
+                display: flex;
+                justify-content: center
+                align-items: center
+                background-image: $dark-blue-gradient;
+                padding: 0 calculateWidth(30)
+                a
+                    color: $actiions-passive;
+                &:first-child
+                    border-right: 1px solid $border-color
+                &:last-child
+                    padding: 0 calculateWidth(75)
+                    background-image: $light-blue
+                    a
+                        color: $white

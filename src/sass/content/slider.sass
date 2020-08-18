@@ -1,0 +1,39 @@
+.slider
+    padding: calculateWidth(34)
+    background-color: rgba(255, 255, 255, 0.3);
+    position: relative
+    .buttons
+        display: flex;
+        position: absolute
+        left: calculateWidth(50 + 34)
+        bottom: calculateHeight(40 + 34)
+        z-index: 1;
+        cursor: pointer
+        .button
+            width: calculateWidth(50)
+            height: 2px
+            background-color: $buttons;
+            &:not(:first-child)
+                margin-left: 5px
+        .active-btn 
+            background-color: $white;
+    .slide
+        display: flex;
+        align-items: center
+        padding: calculateHeight(120) calculateWidth(125)
+        background-image: url(../img/slider-bg.png)
+        background-size: cover
+        min-height: 380px
+        position: relative
+        .text-box
+            max-width: 50%;
+            span 
+                color: $white;
+            h2
+                span 
+                    color: $gold;
+        img
+            position: absolute
+            bottom: 0;
+            height: 120%
+            right: calculateWidth(125)
