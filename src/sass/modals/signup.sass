@@ -1,0 +1,141 @@
+.signup-wrapper
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999999999999;
+    display: none;
+    justify-content: center;
+    align-items: center
+    background-color: rgba(0, 0, 0, 0.5)
+    @media screen and ( max-width: 768px )
+        height: 100%;
+    .signup-content
+        max-width: calculateWidth(475)
+        display: flex;
+        flex-wrap: wrap
+        position: relative
+        z-index: 99999999999999999999999999;
+        @media screen and ( max-width: 768px )
+            max-width: initial
+        .cross
+            position: absolute;
+            width: calculateWidth(50)
+            height: calculateWidth(50)
+            background-color: $black;
+            cursor: pointer
+            top: 0;
+            right: calculateWidth(-20 - 50)
+            @media screen and ( max-width: 768px )
+                top: initial;
+                right: 0
+                width: 50px
+                height: 50px
+            &::after,
+            &::before
+                width: 50%;
+                height: 1px
+                content: ' ';
+                position: absolute;
+                top: 50%;
+                margin-top: -0.5px
+                background-color: $red
+                left: 50%;
+                margin-left: -25%;
+                transform: rotate(45deg)
+            &::before
+                transform: rotate(-45deg)
+        .top-bar
+            width: 100%;
+            display: flex
+            height: calculateHeight(100)
+            a
+                width: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: $links-light
+                background-color: $login
+            .active_entry
+                background-color: $signup                    
+        #login
+            display: none;
+        .main-bar
+            padding: 40px
+            width: 100%;
+            background-color: $modal-bg
+            .social-in
+                display: flex;
+                align-items: center;
+                background: linear-gradient(to right,#0047b1,#005fcb);
+                padding: calculateHeight(5) calculateWidth(20)
+                position: relative
+                @media screen and ( max-width: 768px )
+                    padding: 5px 20px
+                .logo
+                    display: flex;
+                    align-items: center
+                    justify-content: center
+                    width: calculateWidth(85)
+                    height: calculateWidth(55)
+                    @media screen and ( max-width: 768px )
+                        width: 50px;
+                        height: 50px
+                    &::after
+                        position: absolute;
+                        content: ' ';
+                        left: calculateWidth(20 + 85 + 20)
+                        height: 100%;
+                        width: 1px;
+                        background-color: $border-color
+                        @media screen and ( max-width: 768px )
+                            left: calc( 20px + 50px )
+                p
+                    color: $links-light
+                    margin: 0 auto
+                    span
+                        color: $white
+            .splitter
+                width: 100%;
+                display: block
+                text-align: center
+                position: relative
+                margin: 40px 0;
+                &::after,
+                &::before
+                    content: ' ';
+                    position: absolute;
+                    left: 0
+                    width: calc( 50% - 2ch )
+                    height: 1px;
+                    background: $border-color
+                    top: 50%;
+                &::before
+                    left: initial;
+                    right: 0
+
+            form
+                margin: 0 auto
+                label
+                input
+                    width: 100%;
+                    background-color: $signup
+                    border: 1px solid $black
+                    padding: calculateHeight(15) calculateWidth(30)
+                    outline: none
+                    color: $white;
+                button
+                    margin: calculateHeight(15) 0
+                    padding: calculateHeight(15) calculateWidth(30)
+                    width: 100%;
+                    background: linear-gradient(to right,#0047b1,#005fcb);
+                    border: 1px solid $black
+                    outline: initial
+            p
+                color: $links-light
+                text-align: center
+                a 
+                    color: $white
+
+                    

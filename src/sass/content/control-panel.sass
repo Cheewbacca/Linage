@@ -1,8 +1,12 @@
 .control-panel
     display: flex;
+    @media screen and ( max-width: 500px )
+        flex-wrap: wrap
     .news
         width: 40%;
         flex-direction: column;
+        @media screen and ( max-width: 500px )
+            width: 100%;
         .top-bar
             width: 100%;    
             height: 20%;
@@ -16,6 +20,12 @@
                 border-radius: 50%
                 position: relative
                 cursor: pointer
+                @media screen and ( max-width: 768px )
+                    width: tW(30)
+                    height: tW(30)
+                @media screen and ( max-width: 500px )
+                    width: 30px
+                    height: 30px
                 &::after
                     position: absolute
                     content: ' '
@@ -68,6 +78,8 @@
     .ranking
         width: 40%;
         flex-direction: column;
+        @media screen and ( max-width: 500px )
+            width: 100%;
         .top-bar
             display: flex;
             align-items: center;
@@ -80,41 +92,78 @@
                 background-color: $footer-top
                 height: 50%;
                 border-radius: 25px
+                display: flex;
+                align-items: center
+                cursor: pointer
+                max-width: calculateWidth(100)
+                flex-wrap: wrap
+                &:hover
+                    border-radius: 1px
+                    li
+                        display: block
+                        border-radius: 1px
+                @media screen and ( max-width: 768px )
+                    max-width: 100px
                 li 
                     padding: calculateHeight(10) calculateWidth(20)
                     background-color: $footer-top
                     display: none;
                     border-radius: 25px
-                    &:first-child
-                        margin-right: calculateWidth(15)
-                        position: relative;
-                        display: block
-                        &::after
-                            position: absolute;
-                            right: 0;
-                            content: ' ';
-                            width: calculateWidth(5)
-                            height: calculateWidth(5)
-                            border-bottom: 1px solid $active-blue
-                            border-right: 1px solid $active-blue
-                            transform: rotate(45deg)
-                            top: 50%
-                            margin-top: calculateWidth(-2.5)
+                    width: 100%;
+                    transition: .3s;
+                    white-space: nowrap
+                    @media screen and ( max-width: 768px )
+                        padding: tH(10) tW(20)
+                    @media screen and ( max-width: 500px )
+                        padding: 10px 20px
+                    &:hover
+                        a
+                            color: $aqva
+                #active-world
+                    margin-right: calculateWidth(15)
+                    position: relative;
+                    @media screen and ( max-width: 768px )
+                        margin-right: tW(15)
+                    @media screen and ( max-width: 500px )
+                        margin-right: 15px
+                    &::after
+                        position: absolute;
+                        right: 0;
+                        content: ' ';
+                        width: calculateWidth(5)
+                        height: calculateWidth(5)
+                        border-bottom: 1px solid $active-blue
+                        border-right: 1px solid $active-blue
+                        transform: rotate(45deg)
+                        top: 50%
+                        margin-top: calculateWidth(-5)
+                        z-index: 1
+                        @media screen and ( max-width: 768px )
+                            width: tW(5)
+                            height: tW(5)
+                        @media screen and ( max-width: 500px )
+                            width: 5px
+                            height: 5px
         .ranking-bar
-            display: flex
+            display: none
             flex-wrap: wrap
             padding-top: initial;
             padding-bottom: initial
             height: 80%
             background: $dark-blue-gradient
+        .visible
+            display: flex;
             li 
                 align-items: center;
                 width: 100%;
                 display: flex;
                 padding: calculateHeight(20) calculateWidth(35)
+                @media screen and ( max-width: 768px )
+                    padding: tH(20) tW(35)
+                @media screen and ( max-width: 500px )
+                    padding: 20px 35px
                 &:first-child
                     position: relative
-                    cursror: pointer
                     &::after
                         position: absolute;
                         right: calculateWidth(15);
@@ -126,6 +175,16 @@
                         transform: rotate(45deg)
                         top: 50%
                         margin-top: calculateWidth(-2.5)
+                        @media screen and ( max-width: 768px )
+                            right: tW(15);
+                            width: tW(5)
+                            height: tW(5)
+                            margin-top: tW(-2.5)
+                        @media screen and ( max-width: 500px )
+                            right: 15px
+                            width: 5px
+                            height: 5px
+                            margin-top: -2.5px
                 &:nth-child(2)
                     background-color: $first-item
                     .position
@@ -158,6 +217,12 @@
                     border-radius: 50%;
                     background-color: $buttons;
                     color: $border-color
+                    @media screen and ( max-width: 768px )
+                        width: tW(30)
+                        height: tW(30)
+                    @media screen and ( max-width: 500px )
+                        width: 30px
+                        height: 30px
                 .player
                     margin-left: calculateWidth(50)
                     color: $border-color
@@ -170,10 +235,13 @@
     .platform
         width: 20%;
         flex-direction: column;
+        @media screen and ( max-width: 500px )
+            width: 100%;
         .platform-item
             display: flex;
             align-items: center;
             justify-content: center
             background-color: $youtube-color
+            height: 33.33333333%;
             &:nth-last-child(odd)
                 background-color: $odd-platforms

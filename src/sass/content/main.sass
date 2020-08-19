@@ -1,13 +1,28 @@
 .main 
-    max-width: 1200px
+    width: 80%
     margin: 0 auto;
+    @media screen and ( max-width: 768px )
+        width: 100%;
+        margin: initial;
+        padding: 12px
     .top-section
         padding: calculateHeight(190) 0 calculateHeight(80) 0;
         display: flex;
         align-items: center;
         justify-content: space-between
+        @media screen and ( max-width: 768px )
+            padding: tH(100) 0 tH(80) 0;
+        @media screen and ( max-width: 500px )
+            flex-wrap: wrap
+        img
+            @media screen and ( max-width: 768px )
+                width: 40%;   
+            @media screen and ( max-width: 500px )
+                width: auto    
         .world-status-box
             display: flex;
+            @media screen and ( max-width: 500px )
+                margin-top: 30px
             .world-item
                 padding: calculateHeight(20) calculateWidth(30)
                 background-color: rgba(0, 0, 0, 0.5)
@@ -24,65 +39,89 @@
                     white-space: nowrap;
             .error
                 background-color: rgba(0, 0, 0, 0.7)
-
-    @import 'slider.sass'
-    @import 'control-panel'
-
-    .worlds_info
-        background-image: url(../img/world-1-bg.png)
-        background-repeat: no-repeat;
-        background-size: cover;
-        display: flex;
-        flex-wrap: wrap
-        padding: calculateHeight(110) calculateWidth(135) calculateHeight(170)
-        flex-direction: column
+    .main-body
         position: relative
-        .worlds_switcher
-            display: flex
-            align-items: center;
-            .active_world
-                color: $aqva
-                text-shadow: 0 0 20px $blue-shadow
-                background: transparent
-            a
-                color: $light-gray
-                &:not(:first-child)
-                    margin-left: calculateWidth(120)
-                    position: relative
-                    &::before
-                        position: absolute;
-                        left: calculateWidth(-60);
-                        height: 100%;
-                        width: 2px;
-                        background-color: $aqva;
-                        content: ' '
-        h3 
-            margin-top: calculateHeight(110)
-            span 
-                color: $aqva
-        .info 
-            display: grid;
-            width: 70%;
-            grid-template-columns: repeat( auto-fill , minmax(135px, 1fr) )
-            grid-gap: 20px
-            margin-top: calculateHeight(40)
-            z-index: 1
-            .info-item
-                padding: calculateHeight(15) calculateWidth(30)
-                background: $dark-blue-gradient
-                border-radius: 25px
-                display: flex;
+        @media screen and ( max-width: 768px )
+            position: static;
+            
+        @import 'slider.sass'
+        @import 'control-panel'
+
+        .worlds_info
+            position: relative
+            .worlds_switcher
+                display: flex
                 align-items: center;
-                justify-content: center
-                border: 1px solid $aqva-border
-        img
-            position: absolute;
-            right: -2%
-            top: -2%    
-            height: 102%
+                z-index: 1
+                position: absolute;
+                top: calculateHeight(110)
+                left: calculateWidth(135)
+                .active_world
+                    color: $aqva
+                    text-shadow: 0 0 20px $blue-shadow
+                    background: transparent
+                a
+                    color: $light-gray
+                    &:not(:first-child)
+                        margin-left: calculateWidth(120)
+                        position: relative
+                        &::before
+                            position: absolute;
+                            left: calculateWidth(-60);
+                            height: 100%;
+                            width: 2px;
+                            background-color: $aqva;
+                            content: ' '
+            .world-info
+                background-image: url(../img/world-1-bg.png)
+                background-repeat: no-repeat;
+                background-size: cover;
+                display: none;
+                flex-wrap: wrap
+                padding: calculateHeight(110) calculateWidth(135) calculateHeight(170)
+                flex-direction: column
+                position: relative
+                @media screen and ( max-width: 500px )
+                    padding: 12px
+                h3 
+                    margin-top: calculateHeight(110)
+                    z-index: 1
+                    @media screen and ( max-width: 500px )
+                        margin-top: 20px
+                    span 
+                        color: $aqva
+                .info 
+                    display: grid;
+                    width: 70%;
+                    grid-template-columns: repeat( auto-fill , minmax(calculateWidth(130), 1fr) )
+                    grid-gap: 20px
+                    margin-top: calculateHeight(40) 
+                    z-index: 1
+                    @media screen and ( max-width: 500px )
+                        width: 100%;
+                        grid-template-columns: repeat( auto-fill , minmax(70px, 1fr) )
+                    .info-item
+                        padding: calculateHeight(15) calculateWidth(30)
+                        background: $dark-blue-gradient
+                        border-radius: 25px
+                        display: flex;
+                        align-items: center;
+                        justify-content: center
+                        border: 1px solid $aqva-border
+                        white-space: nowrap
+                        span 
+                            color: $aqva
+                img
+                    position: absolute;
+                    right: -2%
+                    top: -2%    
+                    height: 102%
+                    @media screen and ( max-width: 768px )
+                        filter: blur(2px)
+            .world-info-2
+                background-image: url(../img/world-2-bg.png)
+                        
+                    
+                    
 
-                
-            
-            
-
-                
+                        

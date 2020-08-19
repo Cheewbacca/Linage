@@ -2,7 +2,7 @@
     .news
         .top-bar.platform-pading
             h3.header-fonts-big.white News
-            .plus
+            a(href="#").plus
         ul.main-bar.platform-pading
             li.main-bar-item
                 a(href="#") 
@@ -23,19 +23,41 @@
         .top-bar.platform-pading
             h3.header-fonts-big.white Ranking
             ul.worlds-list
-                li 
+                li.world#active-world.world-1.visible
                     a(href="#").mini-fonts World 1
-                li 
-                    a(href="#").mini-fonts World 1
-                li 
-                    a(href="#").mini-fonts World 1
+                li.world.world-2
+                    a(href="#").mini-fonts World 2
                 
-        ul.ranking-bar
+        ul.ranking-bar.visible.world-1 
             li.ranking-bar-item
                 h3.header-fonts PVP
             li.ranking-bar-item
                 .position.header-fonts 1
-                span.player.header-fonts L2Master
+                span.player.header-fonts L2Master 
+                span.score.date-fonts Score: <span> 26/0 </span>
+            li.ranking-bar-item
+                .position.header-fonts 2
+                span.player.header-fonts MageOnCrack
+                span.score.date-fonts  Score: <span> 26/0 </span>
+            li.ranking-bar-item
+                .position.header-fonts 3
+                span.player.header-fonts PVPKing
+                span.score.date-fonts  Score: <span> 26/0 </span>
+            li.ranking-bar-item
+                .position.header-fonts 4
+                span.player.header-fonts TheWorstP
+                span.score.date-fonts  Score: <span> 26/0 </span>
+            li.ranking-bar-item
+                .position.header-fonts 5
+                span.player.header-fonts GodnessisHere
+                span.score.date-fonts  Score: <span> 26/0 </span>
+
+        ul.ranking-bar.world-2
+            li.ranking-bar-item
+                h3.header-fonts PVP
+            li.ranking-bar-item
+                .position.header-fonts 1
+                span.player.header-fonts L2Master (World 2)
                 span.score.date-fonts Score: <span> 26/0 </span>
             li.ranking-bar-item
                 .position.header-fonts 2

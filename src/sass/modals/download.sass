@@ -1,0 +1,76 @@
+.download-content
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 999999999;
+    display: none;
+    .top-bar
+        width: 100%;
+        display: flex;
+        padding: calculateHeight(40) calculateWidth(60)
+        align-items: center;
+        justify-content: space-between;
+        background-color: rgba(255, 255, 255, 0.8)
+        height: 150px
+        span 
+            color: $download;
+        ul 
+            display: flex;
+            align-items: center;
+            justify-content: center
+            li 
+                padding: calculateHeight(10) calculateWidth(35)
+                background-color: red
+                margin-left: 10px
+                border-radius: 25px
+                background-color: rgba(0, 0, 0, 0.7)
+                a
+                    color: $links-light
+                    white-space: nowrap
+            .active-download-world
+                background-color: $signup
+                width: 100%;
+                height: 100%;   
+                a
+                    color: $aqva
+    .download-main
+        padding: calculateHeight(100) calculateWidth(140) calculateHeight(200)
+        background-color: $download-bg
+        height: calc(100% - 150px)
+        .options
+            .options-list
+                display: flex;
+                justify-content: space-between
+                align-items: center
+                li 
+                    width: 30%;
+                    display: flex;
+                    justify-content: center
+                    background-color: $signup
+                    a
+                        width: 100%;
+                        height: 100%;
+                        text-align: center
+                        border: 1px solid currentColor;
+        .manual
+            a
+                width: 30%;
+                display: block
+                text-align: center;
+                background: $arrow
+                color: $dark-blue
+        .requirements
+            table
+                width: 100%;
+                border: initial
+                border-
+                tr
+                    th,
+                    td
+                        text-align: left
+                        padding: calculateHeight(30) calculateWidth(50)
+                    th
+                        background-color: $th
+                    td
+                        color: $links-light

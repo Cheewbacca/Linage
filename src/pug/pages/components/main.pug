@@ -8,22 +8,47 @@ section.main
             .world-item.error
                 span.header-fonts.white World 2
                 span.error-font Under Maintenance
+    
+    .main-body
+        include ../modals/download
+        include partials/slider
+        include partials/panel
 
-    include partials/slider
-    include partials/panel
-
-    .worlds_info
-        .worlds_switcher
-            a(href="#").footer-fonts-big.active_world World 1
-            a(href="#").footer-fonts-big World 2
-        h3.h3-font High Five 
-            span X5
-        ul.info 
-            li.info-item.header-fonts.white XP: X5 
-            li.info-item.header-fonts.white XP: X5 
-            li.info-item.header-fonts.white XP: X5 
-            li.info-item.header-fonts.white XP: X5 
-            li.info-item.header-fonts.white XP: X5 
-            li.info-item.header-fonts.white XP: X5 
-        img(src="static/img/world-1-img.png", alt="")
-                    
+        .worlds_info
+            .worlds_switcher
+                a(href="#").footer-fonts-big.active_world#wrld1 World 1
+                a(href="#").footer-fonts-big#wrld2 World 2
+            .world-info.visible
+                h3.h3-font High Five 
+                    span X5
+                ul.info 
+                    li.info-item.header-fonts.white XP: 
+                        span X5 
+                    li.info-item.header-fonts.white XP: 
+                        span X5 
+                    li.info-item.header-fonts.white XP: 
+                        span X5 
+                    li.info-item.header-fonts.white XP: 
+                        span X5 
+                    li.info-item.header-fonts.white XP: 
+                        span X5 
+                    li.info-item.header-fonts.white XP: 
+                        span X5 
+                img(src="static/img/world-1-img.png", alt="")
+            .world-info.world-info-2
+                h3.h3-font High Five 
+                    span X5
+                ul.info 
+                    li.info-item.header-fonts.white XP: 
+                        span X5 
+                    li.info-item.header-fonts.white XP: 
+                        span X5 
+                    li.info-item.header-fonts.white XP: 
+                        span X5 
+                    li.info-item.header-fonts.white XP: 
+                        span X5 
+                    li.info-item.header-fonts.white XP: 
+                        span X5 
+                    li.info-item.header-fonts.white XP: 
+                        span X5 
+                img(src="static/img/world-2-img.png", alt="")

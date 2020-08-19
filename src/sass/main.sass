@@ -4,10 +4,24 @@
 @import 'imports/global.sass'
 @import 'imports/fonts.sass'
 
+.disableScroll
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    overflow-y: scroll !important;
+    z-index: 10;
+    
 body
+    scroll-behavior: smooth;
     background-image: url(../img/bg.png);
     background-size: cover
     background-repeat: no-repeat;
+    overflow-x: hidden
+    
     @import 'imports/header.sass'
+    @import 'modals/signup.sass'
+    @import 'modals/download.sass'
     @import 'content/main.sass'
     @import 'imports/footer'

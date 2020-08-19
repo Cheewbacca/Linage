@@ -4,30 +4,70 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="static\css\main.css">
-    <link rel="stylesheet" href="static\css\slick.css">
+    <title>Linage</title>
+    <link rel="shortcut icon" href="static/img/L.png" type="image/x-icon">
   </head>
   <body>
-    <header> <a class="header-logo dark_blue-background" href="#">
+    <header> <a class="header-logo dark_blue-background" href="/">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20%" height="80%">
           <image x="0px" y="0px" width="100%" height="100%" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAgCAMAAAAlvKiEAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABSlBMVEU21/821/821/821/821/821/821/821/821/821/821/821/821/821/821/821/821/821/821/821/821/821/821/821/821/821/821/821/821/821/821/821/821/821/821/821/821/821/821/821/821/821/821/821/821/821/821/821/821/821/821/821/821/821/821/821/821/821/821/821/821/821/821/821/821/821/821/821/821/821/821/821/821/821/821/821/821/821/821/821/821/821/821/821/821/821/821/821/821/821/821/821/821/821/821/821/821/821/821/821/821/821/821/821/821/821/821/821/821//////mADv5AAAAbHRSTlMAMQo9mga/nWB8JPSLQS8JBc/qgRGp85Qwoa6CkgSxCIiwIHXCAVSrHjf7+DYS5NTbDWb3JyI8wFFdTWcs/nQX9RPtbFw+4SMYidIhZcnHe+7fW2N3jqDxM6/p2t7n8v1+MoMuAwsQGygMVk6+GU+YAAAAAWJLR0RtuwYArQAAAAd0SU1FB+QIEBYUDWncm0AAAAEESURBVCjPbdHbNwJRFAbww5gmFc1Mo8hlZAyh5BIpEiqXYlxzSe5yyff/Pzt6IGfPfthr7d/ae31rncO6uhktqUd2UY/igl70UvT54Ql4+/qDnahq4KWHjH+rA0A4MijcDwHRYUlAhV+PjAoYAcZMMX4ciE2IaAGTtohTwHRcxJlZzCVETM4jRYJYFAuLBJewnCa44scqQTuDNfp6IWQp5rBOcSO/SbGwZVHc3im6oF4iZsT1MkGftbv3N6m5/R87CFd+qXp45BisenwCnJbOsufFi9qlc4X8NWM3AQd1R9Mqt427+wf+h498/6n8rLy8yqpsms23949aqtnO/uwMbX3x9g356ywonQKeqQAAAABJRU5ErkJggg=="></image>
         </svg></a>
-      <nav> 
-        <ul> 
-          <li> <a class="header-fonts active" href="#">Main</a></li>
-          <li> <a class="header-fonts" href="#">Worlds</a></li>
-          <li> <a class="header-fonts" href="#">Buy Coins</a></li>
-          <li> <a class="header-fonts" href="#">Statistic</a></li>
-          <li> <a class="header-fonts" href="#">Community</a></li>
-        </ul>
-      </nav>
-      <div class="actions-bar">
-        <ul> 
-          <li class="dark_blue-background"> <a class="header-fonts" href="#" id="signUp">Sign Up</a></li>
-          <li class="dark_blue-background"> <a class="active header-fonts" href="#" id="login">Login</a></li>
-          <li> <a class="header-fonts-big" href="#" id="download">Download   </a></li>
-        </ul>
+      <div class="closed" id="burger"></div>
+      <div class="menu" id="menu">
+        <nav> 
+          <ul> 
+            <li> <a class="header-fonts active" href="/">Main</a></li>
+            <li> <a class="header-fonts" href="#">Worlds</a></li>
+            <li> <a class="header-fonts" href="#">Buy Coins</a></li>
+            <li> <a class="header-fonts" href="#">Statistic</a></li>
+            <li> <a class="header-fonts" href="#">Community</a></li>
+          </ul>
+        </nav>
+        <div class="actions-bar">
+          <ul> 
+            <li class="dark_blue-background"> <a class="signUp header-fonts" href="#">Sign Up</a></li>
+            <li class="dark_blue-background"> <a class="signUp active header-fonts" href="#">Login</a></li>
+            <li> <a class="header-fonts-big" href="#downloadContent" id="download">Download   </a></li>
+          </ul>
+        </div>
       </div>
     </header>
+    <div class="signup-wrapper" id="signUp">
+      <div class="signup-content">
+        <div class="cross" id="closeLogin"></div>
+        <div class="top-bar"><a class="header-fonts active active_entry" href="#" id="getSignUp">Sign Up</a><a class="header-fonts" href="#" id="getLogin">Login</a></div>
+        <div class="main-bar form"><a class="social-in" href="#">
+            <div class="logo">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50%" height="50%">
+                <image x="0px" y="0px" width="100%" height="100%" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAMAAABFjsb+AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAt1BMVEXr8fnr8fnr8fnr8fnr8fnr8fnr8fnr8fnr8fnr8fnr8fnr8fnr8fnr8fnr8fnr8fnr8fnr8fnr8fnr8fnr8fnr8fnr8fnr8fnr8fnr8fnr8fnr8fnr8fnr8fnr8fnr8fnr8fnr8fnr8fnr8fnr8fnr8fnr8fnr8fnr8fnr8fnr8fnr8fnr8fnr8fnr8fnr8fnr8fnr8fnr8fnr8fnr8fnr8fnr8fnr8fnr8fnr8fnr8fnr8fn///9R8Zl8AAAAO3RSTlMAGa/o6xqxsO3m7PeXVktM0vjlpREXwmpj6fD9pmajbTcWI7syP9Dbx1F6y/tsomifZaDuZKSt4eRaj2Ca0R8AAAABYktHRDynamHPAAAAB3RJTUUH5AgSFSsSFEXKWwAAAJhJREFUGNNl0NcWgjAQBNBJQOzYFXvs2DtY/v+/jDHABuclc+5DNhswbtk0Fs/AeaeTRe7P8ijEvVgqu5Xq1+yIai5k5FX1xBpSmq22YR3A6/b6hnnAQBViQ2Bk2lhMgKkQM2Jz/ELnLrQtia38NbDxtztjxh44pOcegZO2eN8zcNF/cI3slphD3nxXhYMF4UPlCbzkEQbsAwmQOKxVboSaAAAAAElFTkSuQmCC"></image>
+              </svg>
+            </div>
+            <p class="header-fonts">Sign Up with <span> Facebook </span></p></a><span class="splitter h4-font">or</span>
+          <form action="">
+            <label for="user"></label>
+            <input class="header-fonts" name="User" type="text" placeholder="Username" required autocomplete="on" id="user">
+            <label for="pass"></label>
+            <input class="header-fonts" name="Password" type="password" placeholder="Password" required autocomplete="on" id="pass">
+            <label for="repeat_pass"></label>
+            <input class="header-fonts" type="password" placeholder="Confirm password" required autocomplete="on" id="repeat_pass">
+            <label for="email"></label>
+            <input class="header-fonts" name="E-mail" type="e-mail" placeholder="E-mail" required autocomplete="on" id="email">
+            <button class="header-fonts white" type="submit" value="Confirm" id="confirm">Confirm</button>
+          </form>
+          <p class="mini-fonts">Confirming the register you agree with our </p>
+          <p class="mini-fonts"><a href="#"> Terms of Use </a> and <a href="#"> Privacy Poliy </a></p>
+        </div>
+        <div class="main-bar form">
+          <form action="">
+            <label for="user"></label>
+            <input class="header-fonts" name="User" type="text" placeholder="Username" required autocomplete="on" id="userLogin">
+            <label for="pass"></label>
+            <input class="header-fonts" name="Password" type="password" placeholder="Password" required autocomplete="on" id="passLogin">
+            <button class="header-fonts white" type="submit" value="Confirm">Login</button>
+          </form>
+        </div>
+      </div>
+    </div>
     <section class="main">
       <div class="top-section"><img src="static/img/main-logo.png" alt="">
         <div class="world-status-box">
@@ -35,76 +75,237 @@
           <div class="world-item error"><span class="header-fonts white">World 2</span><span class="error-font">Under Maintenance</span></div>
         </div>
       </div>
-      <div class="slider">
-        <div class="buttons">
-          <div class="button active-btn"></div>
-          <div class="button"></div>
-          <div class="button"></div>
-        </div>
-        <div class="slide"> 
-          <div class="text-box"><span class="header-fonts-big">Weeknd EVENT!</span>
-            <h2 class="h2-font"><span> EXP X2 </span> in all  Worlds! </h2>
-          </div><img src="static/img/slider-item.png" alt="">
-        </div>
-      </div>
-      <div class="control-panel">
-        <div class="news">
-          <div class="top-bar platform-pading">
-            <h3 class="header-fonts-big white">News</h3>
-            <div class="plus"></div>
-          </div>
-          <ul class="main-bar platform-pading">
-            <li class="main-bar-item"><a href="#"> <img class="ico" src="static/img/avatar.png" alt=""><span class="date date-fonts">02 June 2020</span>
-                <h4 class="title h4-font"><span> New </span> The World 2 is coming! The new...</h4></a></li>
-            <li class="main-bar-item"><a href="#"> <img class="ico" src="static/img/avatar.png" alt=""><span class="date date-fonts">02 June 2020</span>
-                <h4 class="title h4-font"><span> New </span> The World 2 is coming! The new...</h4></a></li>
-            <li class="main-bar-item"><a href="#"> <img class="ico" src="static/img/avatar.png" alt=""><span class="date date-fonts">02 June 2020</span>
-                <h4 class="title h4-font"><span> New </span> The World 2 is coming! The new...</h4></a></li>
-          </ul>
-        </div>
-        <div class="ranking">
-          <div class="top-bar platform-pading">
-            <h3 class="header-fonts-big white">Ranking</h3>
-            <ul class="worlds-list">
-              <li> <a class="mini-fonts" href="#">World 1</a></li>
-              <li> <a class="mini-fonts" href="#">World 1</a></li>
-              <li> <a class="mini-fonts" href="#">World 1</a></li>
+      <div class="main-body">
+        <div class="download-content" id="downloadContent">
+          <div class="top-bar"><span class="green-font">Download</span>
+            <ul> 
+              <li class="active-download-world" id="downloadW1"><a class="header-fonts" href="#">World 1</a></li>
+              <li id="downloadW2"> <a class="header-fonts" href="#">World 2</a></li>
             </ul>
           </div>
-          <ul class="ranking-bar">
-            <li class="ranking-bar-item">
-              <h3 class="header-fonts">PVP</h3>
-            </li>
-            <li class="ranking-bar-item">
-              <div class="position header-fonts">1</div><span class="player header-fonts">L2Master</span><span class="score date-fonts">Score: <span> 26/0 </span></span>
-            </li>
-            <li class="ranking-bar-item">
-              <div class="position header-fonts">2</div><span class="player header-fonts">MageOnCrack</span><span class="score date-fonts"> Score: <span> 26/0 </span></span>
-            </li>
-            <li class="ranking-bar-item">
-              <div class="position header-fonts">3</div><span class="player header-fonts">PVPKing</span><span class="score date-fonts"> Score: <span> 26/0 </span></span>
-            </li>
-            <li class="ranking-bar-item">
-              <div class="position header-fonts">4</div><span class="player header-fonts">TheWorstP</span><span class="score date-fonts"> Score: <span> 26/0 </span></span>
-            </li>
-            <li class="ranking-bar-item">
-              <div class="position header-fonts">5</div><span class="player header-fonts">GodnessisHere</span><span class="score date-fonts"> Score: <span> 26/0 </span></span>
-            </li>
-          </ul>
+          <div class="download-main">
+            <div class="options">
+              <p class="dotted header-fonts-big">Choose the best download option (File size: <span> 7.5GB </span>)</p>
+              <ul class="options-list m50-t-b">
+                <li><a class="green-font red p30-t-b" href="#">MEGA</a></li>
+                <li><a class="green-font p30-t-b" href="#">Torrent</a></li>
+                <li><a class="green-font blue p30-t-b" href="#">Mediafire</a></li>
+              </ul>
+            </div>
+            <div class="manual">
+              <p class="dotted header-fonts-big">Manual Update (File size:<span> 109MB </span>)</p><a class="p30-t-b green-font m50-t-b" href="#">Download</a>
+            </div>
+            <div class="requirements">
+              <p class="dotted header-fonts-big">System Requirements</p>
+              <table class="requirements-list m50-t-b" cellspacing="0" cellpadding="0">
+                <tr>
+                  <th class="h4-font">Components</th>
+                  <th class="h4-font">Minimum</th>
+                  <th class="h4-font">Recomended</th>
+                </tr>
+                <tr> 
+                  <td class="header-fonts">CPU  </td>
+                  <td class="header-fonts">Intel® Pentium® 4 3.0 GHz </td>
+                  <td class="header-fonts">Intel® Core™2 Duo 6300  </td>
+                </tr>
+                <tr> 
+                  <td class="header-fonts">Memory  </td>
+                  <td class="header-fonts">2 GB or more RAM    </td>
+                  <td class="header-fonts">4 GB or more RAM </td>
+                </tr>
+                <tr> 
+                  <td class="header-fonts">Video card  </td>
+                  <td class="header-fonts">NVIDIA® GeForce® 6600 GT </td>
+                  <td class="header-fonts">NVIDIA® GeForce® 7600 GT </td>
+                </tr>
+                <tr> 
+                  <td class="header-fonts">Connection  </td>
+                  <td class="header-fonts">56k Internet connection </td>
+                  <td class="header-fonts">Broadband Internet Connection </td>
+                </tr>
+                <tr> 
+                  <td class="header-fonts">Hard Disc  </td>
+                  <td class="header-fonts table-center" colspan="2">30 GB or higher free space  </td>
+                </tr>
+                <tr> 
+                  <td class="header-fonts">Direct X  </td>
+                  <td class="header-fonts table-center" colspan="2">Direct X 9.0c or above </td>
+                </tr>
+                <tr> 
+                  <td class="header-fonts">Operating System  </td>
+                  <td class="header-fonts table-center" colspan="2">Windows 7 32bit / Windows 8 32bit / Windows 10 32bit</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="download-main">
+            <div class="options">
+              <p class="dotted header-fonts-big">Choose the best download option (File size: <span> 7.5GB </span>) 2</p>
+              <ul class="options-list m50-t-b">
+                <li><a class="green-font red p30-t-b" href="#">MEGA</a></li>
+                <li><a class="green-font p30-t-b" href="#">Torrent</a></li>
+                <li><a class="green-font blue p30-t-b" href="#">Mediafire</a></li>
+              </ul>
+            </div>
+            <div class="manual">
+              <p class="dotted header-fonts-big">Manual Update (File size:<span> 109MB </span>)</p><a class="p30-t-b green-font m50-t-b" href="#">Download</a>
+            </div>
+            <div class="requirements">
+              <p class="dotted header-fonts-big">System Requirements</p>
+              <table class="requirements-list m50-t-b" cellspacing="0" cellpadding="0">
+                <tr>
+                  <th class="h4-font">Components</th>
+                  <th class="h4-font">Minimum</th>
+                  <th class="h4-font">Recomended</th>
+                </tr>
+                <tr> 
+                  <td class="header-fonts">CPU  </td>
+                  <td class="header-fonts">Intel® Pentium® 4 3.0 GHz </td>
+                  <td class="header-fonts">Intel® Core™2 Duo 6300  </td>
+                </tr>
+                <tr> 
+                  <td class="header-fonts">Memory  </td>
+                  <td class="header-fonts">2 GB or more RAM    </td>
+                  <td class="header-fonts">4 GB or more RAM </td>
+                </tr>
+                <tr> 
+                  <td class="header-fonts">Video card  </td>
+                  <td class="header-fonts">NVIDIA® GeForce® 6600 GT </td>
+                  <td class="header-fonts">NVIDIA® GeForce® 7600 GT </td>
+                </tr>
+                <tr> 
+                  <td class="header-fonts">Connection  </td>
+                  <td class="header-fonts">56k Internet connection </td>
+                  <td class="header-fonts">Broadband Internet Connection </td>
+                </tr>
+                <tr> 
+                  <td class="header-fonts">Hard Disc  </td>
+                  <td class="header-fonts table-center" colspan="2">30 GB or higher free space  </td>
+                </tr>
+                <tr> 
+                  <td class="header-fonts">Direct X  </td>
+                  <td class="header-fonts table-center" colspan="2">Direct X 9.0c or above </td>
+                </tr>
+                <tr> 
+                  <td class="header-fonts">Operating System  </td>
+                  <td class="header-fonts table-center" colspan="2">Windows 7 32bit / Windows 8 32bit / Windows 10 32bit</td>
+                </tr>
+              </table>
+            </div>
+          </div>
         </div>
-        <div class="platform"><a class="platform-item" href="#"><img src="static/img/discord.png" alt=""></a><a class="platform-item" href="#"><img src="static/img/youtube.png" alt=""></a><a class="platform-item" href="#"><img src="static/img/facebook.png" alt=""></a></div>
-      </div>
-      <div class="worlds_info">
-        <div class="worlds_switcher"><a class="footer-fonts-big active_world" href="#">World 1</a><a class="footer-fonts-big" href="#">World 2</a></div>
-        <h3 class="h3-font">High Five <span>X5</span></h3>
-        <ul class="info"> 
-          <li class="info-item header-fonts white">XP: X5 </li>
-          <li class="info-item header-fonts white">XP: X5 </li>
-          <li class="info-item header-fonts white">XP: X5 </li>
-          <li class="info-item header-fonts white">XP: X5 </li>
-          <li class="info-item header-fonts white">XP: X5 </li>
-          <li class="info-item header-fonts white">XP: X5 </li>
-        </ul><img src="static/img/world-1-img.png" alt="">
+        <div class="slider" id="slider">
+          <div class="buttons">
+            <div class="button active-slide bt-1"></div>
+            <div class="button bt-2"></div>
+            <div class="button bt-3"></div>
+          </div>
+          <div class="slide bt-1">
+            <div class="text-box"><span class="header-fonts-big">Weeknd EVENT!</span>
+              <h2 class="h2-font"><span> EXP X2 </span> in all  Worlds! </h2>
+            </div><img src="static/img/slider-item.png" alt="">
+          </div>
+          <div class="slide bt-2"> 
+            <div class="text-box"><span class="header-fonts-big">Weeknd EVENT 2 !</span>
+              <h2 class="h2-font"><span> EXP X2 </span> in all  Worlds! </h2>
+            </div><img src="static/img/slider-item.png" alt="">
+          </div>
+          <div class="slide bt-3"> 
+            <div class="text-box"><span class="header-fonts-big">Weeknd EVENT 3 !</span>
+              <h2 class="h2-font"><span> EXP X2 </span> in all  Worlds! </h2>
+            </div><img src="static/img/slider-item.png" alt="">
+          </div>
+        </div>
+        <div class="control-panel">
+          <div class="news">
+            <div class="top-bar platform-pading">
+              <h3 class="header-fonts-big white">News</h3><a class="plus" href="#"></a>
+            </div>
+            <ul class="main-bar platform-pading">
+              <li class="main-bar-item"><a href="#"> <img class="ico" src="static/img/avatar.png" alt=""><span class="date date-fonts">02 June 2020</span>
+                  <h4 class="title h4-font"><span> New </span> The World 2 is coming! The new...</h4></a></li>
+              <li class="main-bar-item"><a href="#"> <img class="ico" src="static/img/avatar.png" alt=""><span class="date date-fonts">02 June 2020</span>
+                  <h4 class="title h4-font"><span> New </span> The World 2 is coming! The new...</h4></a></li>
+              <li class="main-bar-item"><a href="#"> <img class="ico" src="static/img/avatar.png" alt=""><span class="date date-fonts">02 June 2020</span>
+                  <h4 class="title h4-font"><span> New </span> The World 2 is coming! The new...</h4></a></li>
+            </ul>
+          </div>
+          <div class="ranking">
+            <div class="top-bar platform-pading">
+              <h3 class="header-fonts-big white">Ranking</h3>
+              <ul class="worlds-list">
+                <li class="world world-1 visible" id="active-world"><a class="mini-fonts" href="#">World 1</a></li>
+                <li class="world world-2"><a class="mini-fonts" href="#">World 2</a></li>
+              </ul>
+            </div>
+            <ul class="ranking-bar visible world-1"> 
+              <li class="ranking-bar-item">
+                <h3 class="header-fonts">PVP</h3>
+              </li>
+              <li class="ranking-bar-item">
+                <div class="position header-fonts">1</div><span class="player header-fonts">L2Master </span><span class="score date-fonts">Score: <span> 26/0 </span></span>
+              </li>
+              <li class="ranking-bar-item">
+                <div class="position header-fonts">2</div><span class="player header-fonts">MageOnCrack</span><span class="score date-fonts"> Score: <span> 26/0 </span></span>
+              </li>
+              <li class="ranking-bar-item">
+                <div class="position header-fonts">3</div><span class="player header-fonts">PVPKing</span><span class="score date-fonts"> Score: <span> 26/0 </span></span>
+              </li>
+              <li class="ranking-bar-item">
+                <div class="position header-fonts">4</div><span class="player header-fonts">TheWorstP</span><span class="score date-fonts"> Score: <span> 26/0 </span></span>
+              </li>
+              <li class="ranking-bar-item">
+                <div class="position header-fonts">5</div><span class="player header-fonts">GodnessisHere</span><span class="score date-fonts"> Score: <span> 26/0 </span></span>
+              </li>
+            </ul>
+            <ul class="ranking-bar world-2">
+              <li class="ranking-bar-item">
+                <h3 class="header-fonts">PVP</h3>
+              </li>
+              <li class="ranking-bar-item">
+                <div class="position header-fonts">1</div><span class="player header-fonts">L2Master (World 2)</span><span class="score date-fonts">Score: <span> 26/0 </span></span>
+              </li>
+              <li class="ranking-bar-item">
+                <div class="position header-fonts">2</div><span class="player header-fonts">MageOnCrack</span><span class="score date-fonts"> Score: <span> 26/0 </span></span>
+              </li>
+              <li class="ranking-bar-item">
+                <div class="position header-fonts">3</div><span class="player header-fonts">PVPKing</span><span class="score date-fonts"> Score: <span> 26/0 </span></span>
+              </li>
+              <li class="ranking-bar-item">
+                <div class="position header-fonts">4</div><span class="player header-fonts">TheWorstP</span><span class="score date-fonts"> Score: <span> 26/0 </span></span>
+              </li>
+              <li class="ranking-bar-item">
+                <div class="position header-fonts">5</div><span class="player header-fonts">GodnessisHere</span><span class="score date-fonts"> Score: <span> 26/0 </span></span>
+              </li>
+            </ul>
+          </div>
+          <div class="platform"><a class="platform-item" href="#"><img src="static/img/discord.png" alt=""></a><a class="platform-item" href="#"><img src="static/img/youtube.png" alt=""></a><a class="platform-item" href="#"><img src="static/img/facebook.png" alt=""></a></div>
+        </div>
+        <div class="worlds_info">
+          <div class="worlds_switcher"><a class="footer-fonts-big active_world" href="#" id="wrld1">World 1</a><a class="footer-fonts-big" href="#" id="wrld2">World 2</a></div>
+          <div class="world-info visible">
+            <h3 class="h3-font">High Five <span>X5</span></h3>
+            <ul class="info"> 
+              <li class="info-item header-fonts white">XP: <span>X5 </span></li>
+              <li class="info-item header-fonts white">XP: <span>X5 </span></li>
+              <li class="info-item header-fonts white">XP: <span>X5 </span></li>
+              <li class="info-item header-fonts white">XP: <span>X5 </span></li>
+              <li class="info-item header-fonts white">XP: <span>X5 </span></li>
+              <li class="info-item header-fonts white">XP: <span>X5 </span></li>
+            </ul><img src="static/img/world-1-img.png" alt="">
+          </div>
+          <div class="world-info world-info-2">
+            <h3 class="h3-font">High Five <span>X5</span></h3>
+            <ul class="info"> 
+              <li class="info-item header-fonts white">XP: <span>X5 </span></li>
+              <li class="info-item header-fonts white">XP: <span>X5 </span></li>
+              <li class="info-item header-fonts white">XP: <span>X5 </span></li>
+              <li class="info-item header-fonts white">XP: <span>X5 </span></li>
+              <li class="info-item header-fonts white">XP: <span>X5 </span></li>
+              <li class="info-item header-fonts white">XP: <span>X5 </span></li>
+            </ul><img src="static/img/world-2-img.png" alt="">
+          </div>
+        </div>
       </div>
     </section>
     <footer>
@@ -121,7 +322,7 @@
               </svg>
             </div><a class="footer-fonts" href="#">ENGLISH</a>
           </li>
-          <li> <a class="footer-fonts" href="#">ENGLISH</a></li>
+          <li> <a class="footer-fonts" href="#">RUSSIAN</a></li>
         </ul>
       </div>
       <div class="footer-bottom">
@@ -132,7 +333,6 @@
         </div>
       </div>
     </footer>
-    <script src="static//js//libs.min.js"></script>
     <script src="static//js//main.js"></script>
   </body>
 </html>

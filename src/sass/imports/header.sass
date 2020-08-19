@@ -10,37 +10,152 @@ header
         align-items: center;
         justify-content: center;
         background: $dark-blue;
-    nav
-        margin-left: calculateWidth(55)
-        ul 
-            display: flex;
-            li 
-                margin-right: calculateWidth(82)
-                a
-                    transition: color .3s
-                    color: $links-light
-                    &:hover
-                        color: $active-blue
-                    
-    .actions-bar
-        margin-left: auto
-        height: calculateHeight(75)
-        ul 
-            display: flex;
-            height: 100%;
-            li 
-                height: 100%;
+    .showMenu
+        transform: translate(0) !important;
+
+    .menu
+        display: flex;
+        justify-content: space-between
+        align-items: center
+        width: 100%;
+        nav
+            margin-left: calculateWidth(55)
+            ul 
                 display: flex;
-                justify-content: center
-                align-items: center
-                background-image: $dark-blue-gradient;
-                padding: 0 calculateWidth(30)
-                a
-                    color: $actiions-passive;
-                &:first-child
-                    border-right: 1px solid $border-color
-                &:last-child
-                    padding: 0 calculateWidth(75)
-                    background-image: $light-blue
+                li 
+                    margin-right: calculateWidth(82)
                     a
-                        color: $white
+                        transition: color .3s
+                        color: $links-light
+                        &:hover
+                            color: $active-blue
+                        
+        .actions-bar
+            margin-left: auto
+            height: calculateHeight(75)
+            ul 
+                display: flex;
+                height: 100%;
+                li 
+                    height: 100%;
+                    display: flex;
+                    justify-content: center
+                    align-items: center
+                    background-image: $dark-blue-gradient;
+                    padding: 0 calculateWidth(30)
+                    a
+                        color: $actiions-passive;
+                    &:first-child
+                        border-right: 1px solid $border-color
+                    &:last-child
+                        padding: 0 calculateWidth(75)
+                        background-image: $light-blue
+                        a
+                            color: $white
+
+@media screen and ( max-width: 768px )
+    header
+        flex-wrap: wrap
+        justify-content: space-between
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 99;
+        background: $dark-blue-gradient
+        .header-logo
+            width: tW(90)
+            height: tW(75)
+        #burger
+            width: tW(90)
+            height: tW(75)
+            position: relative
+            z-index: 99999999999999;
+        .closed
+            &::after,
+            &::before
+                position: absolute;
+                content: ' ';
+                height: 2px 
+                width: 80%;
+                right: 50%;
+                margin-right: -40%;
+                top: 35%;
+                background-color: $arrow;
+            &::before
+                // width: 50%;
+                top: 65%;
+        .opened
+            &::after,
+            &::before
+                position: absolute;
+                content: ' ';
+                height: 2px 
+                width: 80%;
+                right: 50%;
+                margin-right: -40%;
+                top: 35%;
+                background-color: $arrow;
+            &::before
+                width: 50%;
+                top: 65%;
+
+        .menu
+            width: 100%
+            height: 100%;
+            position: fixed
+            cursor: pointer
+            z-index: 999;
+            top: 0
+            left: 0
+            display: flex;
+            transform: translate(-200%)
+            flex-direction: column;
+            background: $dark-blue-gradient
+            transition: transform .3s;
+            nav
+                margin-left: initial;
+                width: 100%;
+                height: 90%;
+                ul 
+                    flex-direction: column;
+                    width: 100%;
+                    height: 100%;
+                    justify-content: space-around
+                    li 
+                        margin-right: initial
+                        text-align: center
+                            
+            .actions-bar
+                height: 10%;
+                margin-left: initial
+                width: 100%;
+                justify-content: space-around
+                ul 
+                    width: 100%;
+                    justify-content: space-around
+                    li 
+                        padding: 0 tW(30)
+                        background: initial;
+                        white-space: nowrap 
+                        &:last-child
+                            padding: 0 tW(75)
+                        &:first-child
+                            border: initial
+
+@media screen and ( max-width: 500px )
+    header
+        .header-logo
+            width: 90px
+            height: 75px    
+        .menu
+            .actions-bar
+                height: 75px
+                ul 
+                    li 
+                        padding: 0 30px
+                        width: 50%;
+                        &:last-child
+                            display: none !important
+                        a
+                            &:last-child
+                                padding: 0 75px

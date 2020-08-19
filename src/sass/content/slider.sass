@@ -2,21 +2,29 @@
     padding: calculateWidth(34)
     background-color: rgba(255, 255, 255, 0.3);
     position: relative
-    .buttons
+    .buttons,
+    .slick-dots
         display: flex;
         position: absolute
         left: calculateWidth(50 + 34)
         bottom: calculateHeight(40 + 34)
-        z-index: 1;
+        z-index: 111;
         cursor: pointer
-        .button
+        .button,
+        li
             width: calculateWidth(50)
-            height: 2px
+            height: 5px
             background-color: $buttons;
             &:not(:first-child)
                 margin-left: 5px
-        .active-btn 
+            button
+                display: none
+        .active-slide,
+        .slick-active
             background-color: $white;
+    .buttons
+        @media screen and ( max-width: 500px )
+            display: none;
     .slide
         display: flex;
         align-items: center
@@ -24,9 +32,15 @@
         background-image: url(../img/slider-bg.png)
         background-size: cover
         min-height: 380px
-        position: relative
+        position: relative      
+        @media screen and ( max-width: 500px )
+            padding: 12px    
+            max-width: 100%;  
         .text-box
             max-width: 50%;
+            z-index: 1
+            @media screen and ( max-width: 500px )
+                max-width: initial
             span 
                 color: $white;
             h2
@@ -36,4 +50,11 @@
             position: absolute
             bottom: 0;
             height: 120%
-            right: calculateWidth(125)
+            right: calculateWidth(0)
+            max-width: calculateWidth(570) 
+            @media screen and ( max-width: 768px )
+                height: 100%;
+                max-width: tW(570) 
+            @media screen and ( max-width: 500px )
+                max-width: 200px
+                height: auto           

@@ -2,6 +2,39 @@
     color: $active-blue !important;
 .white
     color: $white
+.red
+    color: $red !important
+.blue
+    color: $aqva !important
 .platform-pading
     padding: calculateHeight(25) calculateWidth(35)
     background: $dark-blue-gradient
+    @media screen and ( max-width: 768px )
+        padding: tH(25) tW(35)
+    @media screen and ( max-width: 500px )
+        padding: 25px 35px
+.dotted
+    color: $white;
+    padding-left: calculateWidth(20)
+    position: relative
+    &::after
+        position: absolute;
+        content: ' ';
+        left: 0;
+        width: 5px
+        height: 5px
+        background-color: $aqva
+        border-radius: 50%;
+        top: 50%;
+        margin-top: -2.5px
+    span 
+        color: $aqva
+.m50-t-b
+    margin: calculateHeight(50) 0;
+.p30-t-b
+    padding: calculateHeight(30) 0
+.table-center
+    text-align: center !important
+    column-span: 2
+.visible
+    display: flex !important

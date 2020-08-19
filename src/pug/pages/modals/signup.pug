@@ -1,0 +1,31 @@
+.signup-wrapper#signUp
+    .signup-content
+        .cross#closeLogin
+        .top-bar
+            a(href="#")#getSignUp.header-fonts.active.active_entry Sign Up
+            a(href="#")#getLogin.header-fonts Login
+        .main-bar.form
+            a(href="#").social-in
+                .logo
+                    include ../svg/facebook
+                p.header-fonts Sign Up with <span> Facebook </span>
+            span.splitter.h4-font or
+            form(action="")
+                label(for="user")
+                input(name="User" type="text" placeholder="Username" required autocomplete="on").header-fonts#user
+                label(for="pass")
+                input(name="Password" type="password" placeholder="Password" required autocomplete="on").header-fonts#pass
+                label(for="repeat_pass")
+                input(type="password" placeholder="Confirm password" required autocomplete="on").header-fonts#repeat_pass
+                label(for="email")
+                input(name="E-mail" type="e-mail" placeholder="E-mail" required autocomplete="on").header-fonts#email
+                button(type="submit" value="Confirm" )#confirm.header-fonts.white Confirm
+            p.mini-fonts Confirming the register you agree with our 
+            p.mini-fonts <a href="#"> Terms of Use </a> and <a href="#"> Privacy Poliy </a>
+        .main-bar.form
+            form(action="")
+                label(for="user")
+                input(name="User" type="text" placeholder="Username" required autocomplete="on").header-fonts#userLogin
+                label(for="pass")
+                input(name="Password" type="password" placeholder="Password" required autocomplete="on").header-fonts#passLogin
+                button(type="submit" value="Confirm" ).header-fonts.white Login

@@ -12,6 +12,10 @@ footer
             padding-left: calculateWidth(30)
             li 
                 padding: calculateWidth(30)
+                a
+                    transition: color .3s
+                    &:hover
+                        color: $aqva
                 &:first-child
                     border-right: 1px solid $gray
         .lang-switcher
@@ -24,9 +28,17 @@ footer
             min-height: 100%;
             right: 0
             max-width: calculateWidth(250)
+            cursor: pointer
+            @media screen and ( max-width: 500px )
+                width: 50%;
+            &:hover
+                li 
+                    display: flex;
+                    &:hover
+                        a
+                            color: $aqva
             li
                 padding: calculateHeight(30) 0;
-                display: flex
                 width: 100%
                 margin-left: calculateWidth(14 + 35)
                 align-items: center;
@@ -85,4 +97,80 @@ footer
             display: flex
             align-items: center;
             justify-content: center
-        
+
+@media screen and ( max-width: 768px )
+    footer
+        .footer-top
+            .terms
+                padding-left: tW(30)
+                li 
+                    padding: tW(30)
+            .lang-switcher
+                padding: 0 tW(35)
+                max-width: tW(250)
+                li
+                    padding: tH(30) 0;
+                    margin-left: tW(14 + 35)
+                    &:first-child
+                        a
+                            margin-right: tW(70)
+                    .lang-img
+                        width: tW(14)
+                        height: tW(14)
+                        margin-right: tW(35)
+                
+        .footer-bottom
+            padding: tH(65) tW(88)
+            .main-logo
+                a
+                    img
+                        width: tW(190)
+            .copyright 
+                margin-left: tW(80)
+            .red-logo
+                width: tW(75);
+                height: tW(75);
+                padding: 5px
+
+@media screen and ( max-width: 500px )
+    footer
+        .footer-top
+            flex-wrap: wrap
+            .terms
+                padding: initial
+                width: 50%;
+                li 
+                    padding: 12px
+                    width: 50%;
+            .lang-switcher
+                padding: 0 12px
+                max-width: 250px
+                li
+                    padding: 12px 0;
+                    margin-left: calc( 14px + 35px )
+                    &:first-child
+                        a
+                            margin-right: 70px
+                    .lang-img
+                        width: 14px
+                        height: 14px
+                        margin-right: 35px
+                
+        .footer-bottom
+            padding: 12px
+            flex-wrap: wrap
+            justify-content: flex-start
+            .main-logo
+                margin-top: 20px
+                width: 100%
+                a
+                    img
+                        width: auto
+            .copyright 
+                margin-top: 20px
+                margin-left: initial
+            .red-logo
+                margin-top: 20px
+                margin-left: initial
+                width: tW(75);
+                height: tW(75);
