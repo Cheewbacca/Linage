@@ -69,7 +69,7 @@ header
             width: tW(90)
             height: tW(75)
             position: relative
-            z-index: 99999999999999;
+            z-index: 99999999999999999999999;
         .closed
             &::after,
             &::before
@@ -137,8 +137,10 @@ header
                         padding: 0 tW(30)
                         background: initial;
                         white-space: nowrap 
+                        width: 25%;
                         &:last-child
                             padding: 0 tW(75)
+                            width: 50%
                         &:first-child
                             border: initial
 
@@ -153,9 +155,6 @@ header
                 ul 
                     li 
                         padding: 0 30px
-                        width: 50%;
-                        &:last-child
-                            display: none !important
                         a
                             &:last-child
                                 padding: 0 75px

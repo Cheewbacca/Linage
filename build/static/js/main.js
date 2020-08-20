@@ -246,10 +246,9 @@ if (window.innerWidth < 768){
         }
         isMenuActive = !isMenuActive;
     });
+
+    const closeDonwload = document.getElementById('closeDonwload');
+    closeDonwload.addEventListener('click', ()=>{
+        downloadContent.style.display = 'none';
+    });
 }
-
-// const signupWrapper = [...document.getElementsByClassName('signup-wrapper')][0];
-
-// signupWrapper.addEventListener('click', function(){
-//     this.style.display = 'none';
-// });
