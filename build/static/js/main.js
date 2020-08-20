@@ -98,8 +98,9 @@ download.addEventListener("click", (e) => {
     isContentVisible = !isContentVisible;
     if (isContentVisible) { 
         downloadContent.style.display = 'block';
+        burger.style.display = 'none';
     }else {
-        downloadContent.style.display = 'none';
+        downloadContent.style.display = 'none'; 
     }
 });
 
@@ -250,5 +251,6 @@ if (window.innerWidth < 768){
     const closeDonwload = document.getElementById('closeDonwload');
     closeDonwload.addEventListener('click', ()=>{
         downloadContent.style.display = 'none';
+        burger.style.display = 'block';
     });
 }
