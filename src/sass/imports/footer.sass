@@ -9,9 +9,9 @@ footer
         .terms
             display: flex;
             align-items: center;
-            padding-left: calculateWidth(30)
+            padding-left: 30px
             li 
-                padding: calculateWidth(30)
+                padding: 30px
                 a
                     transition: color .3s
                     &:hover
@@ -22,12 +22,12 @@ footer
             background-color: $lang-switcher
             display: flex;
             flex-wrap: wrap
-            padding: 0 calculateWidth(35)
+            padding: 0 35px
             position: absolute
             height: auto
             min-height: 100%;
             right: 0
-            max-width: calculateWidth(250)
+            max-width: 250px
             cursor: pointer
             @media screen and ( max-width: 500px )
                 width: 50%;
@@ -38,9 +38,9 @@ footer
                         a
                             color: $aqva
             li
-                padding: calculateHeight(30) 0;
+                padding: 30px 0;
                 width: 100%
-                margin-left: calculateWidth(14 + 35)
+                margin-left: 50px
                 align-items: center;
                 display: none;
                 &:first-child
@@ -48,7 +48,7 @@ footer
                     position: relative
                     display: flex
                     a
-                        margin-right: calculateWidth(70)
+                        margin-right: 70px
                         &::after
                             position: absolute
                             content: ' '
@@ -61,9 +61,9 @@ footer
                             margin-top: -4px
                             right: 0
                 .lang-img
-                    width: calculateWidth(14)
-                    height: calculateWidth(14)
-                    margin-right: calculateWidth(35)
+                    width: 14px
+                    height: 14px
+                    margin-right: 35px
                     display: flex;
                     align-items: center
                     justify-content: center
@@ -75,52 +75,52 @@ footer
         width: 100%;
         display: flex;
         align-items: center
-        padding: calculateHeight(65) calculateWidth(88)
+        padding: 65px 88px
         background-color: $footer-bottom
         .main-logo
             a
                 img
-                    width: calculateWidth(190)
+                    width: 190px
         .copyright 
             display: flex;
             flex-wrap: wrap
-            margin-left: calculateWidth(80)
+            margin-left: 80px
             span
                 width: 100%;
                 color: $white;
         .red-logo
             margin-left: auto
             background-color: $red;
-            width: calculateWidth(75);
-            height: calculateWidth(75);
+            width: 75px;
+            height: 75px;
             border-radius: 5px
             display: flex
             align-items: center;
             justify-content: center
 
-@media screen and ( max-width: 768px )
+@media screen and ( max-width: 1200px )
     footer
         .footer-top
             .terms
-                padding-left: tW(30)
+                padding-left: 30px
                 li 
-                    padding: tW(30)
+                    padding: 30px
             .lang-switcher
-                padding: 0 tW(35)
-                max-width: tW(250)
+                padding: 0 35px
+                max-width: 250px
                 li
-                    padding: tH(30) 0;
-                    margin-left: tW(14 + 35)
+                    padding: 30px 0;
+                    margin-left: 50px
                     &:first-child
                         a
-                            margin-right: tW(70)
+                            margin-right: 70px
                     .lang-img
-                        width: tW(14)
-                        height: tW(14)
-                        margin-right: tW(35)
+                        width: 14px
+                        height: 14px
+                        margin-right: 35px
                 
         .footer-bottom
-            padding: tH(65) tW(88)
+            padding: 65px 88px
             .main-logo
                 a
                     img

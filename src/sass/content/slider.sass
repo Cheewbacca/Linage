@@ -1,18 +1,18 @@
 .slider
-    padding: calculateWidth(34)
+    padding: 34px
     background-color: rgba(255, 255, 255, 0.3);
     position: relative
     .buttons,
     .slick-dots
         display: flex;
         position: absolute
-        left: calculateWidth(50 + 34)
-        bottom: calculateHeight(40 + 34)
+        left: 84px
+        bottom: 74px
         z-index: 111;
         cursor: pointer
         .button,
         li
-            width: calculateWidth(50)
+            width: 50px
             height: 5px
             background-color: $buttons;
             &:not(:first-child)
@@ -28,7 +28,7 @@
     .slide
         display: flex;
         align-items: center
-        padding: calculateHeight(120) calculateWidth(125)
+        padding: 120px 125px
         background-image: url(../img/slider-bg.png)
         background-size: cover
         min-height: 380px
@@ -50,9 +50,9 @@
             position: absolute
             bottom: 0;
             height: 120%
-            right: calculateWidth(0)
-            max-width: calculateWidth(570) 
-            @media screen and ( max-width: 768px )
+            right: 0;
+            max-width: 570px
+            @media screen and ( max-width: 1200px )
                 height: 100%;
                 max-width: tW(570) 
             @media screen and ( max-width: 500px )

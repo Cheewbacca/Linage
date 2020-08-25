@@ -4,8 +4,8 @@ header
     justify-content: flex-start
     border-bottom: 1px solid $border-color
     .header-logo
-        width: calculateWidth(90)
-        height: calculateHeight(75)
+        width: 90px
+        height: 75px
         display: flex;
         align-items: center;
         justify-content: center;
@@ -19,11 +19,11 @@ header
         align-items: center
         width: 100%;
         nav
-            margin-left: calculateWidth(55)
+            margin-left: 55px
             ul 
                 display: flex;
                 li 
-                    margin-right: calculateWidth(82)
+                    margin-right: 82px
                     a
                         transition: color .3s
                         color: $links-light
@@ -32,7 +32,7 @@ header
                         
         .actions-bar
             margin-left: auto
-            height: calculateHeight(75)
+            height: 75px
             ul 
                 display: flex;
                 height: 100%;
@@ -42,18 +42,18 @@ header
                     justify-content: center
                     align-items: center
                     background-image: $dark-blue-gradient;
-                    padding: 0 calculateWidth(30)
+                    padding: 0 30px
                     a
                         color: $actiions-passive;
                     &:first-child
                         border-right: 1px solid $border-color
                     &:last-child
-                        padding: 0 calculateWidth(75)
+                        padding: 0 75px
                         background-image: $light-blue
                         a
                             color: $white
 
-@media screen and ( max-width: 768px )
+@media screen and ( max-width: 1200px )
     header
         flex-wrap: wrap
         justify-content: space-between
@@ -63,13 +63,14 @@ header
         z-index: 99;
         background: $dark-blue-gradient
         .header-logo
-            width: tW(90)
-            height: tW(75)
+            width: 90px
+            height: 75px
         #burger
-            width: tW(90)
-            height: tW(75)
+            width: 90px
+            height: 75px
             position: relative
             z-index: 99999999999999999999999;
+            cursor: pointer
         .closed
             &::after,
             &::before
@@ -134,12 +135,12 @@ header
                     width: 100%;
                     justify-content: space-around
                     li 
-                        padding: 0 tW(30)
+                        padding: 0 30px
                         background: initial;
                         white-space: nowrap 
                         width: 25%;
                         &:last-child
-                            padding: 0 tW(75)
+                            padding: 0 75px
                             width: 50%
                         &:first-child
                             border: initial
