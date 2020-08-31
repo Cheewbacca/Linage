@@ -1,35 +1,60 @@
 // slider for desktop / mobile
 
+const arrowLeft = document.getElementById('arrow_left');
+const arrowRight = document.getElementById('arrow_right');
+
 if( window.innerWidth > 500 ){
-    const slides = document.getElementsByClassName('slide'); // slides
-    const buttons = document.getElementsByClassName('button'); // buttons
+    const slides = [...document.getElementsByClassName('slide')]; // slides
+    const buttons = [...document.getElementsByClassName('button')]; // buttons
 
-    let slidesNames = ['bt-1', 'bt-2', 'bt-3'];
+    let slideIndex = 1;
 
-    // hide all slides before script started
-    [...slides].forEach( (slide, index) => {
-        if (index) {
-            slide.style.display = 'none';
+    function changeSlide(slideIndex){
+        if (slideIndex > slides.length){
+            slideIndex = 1;
+        }else if (slideIndex < 1){
+            slideIndex = slides.length;
         }
-    });
+
+        slides.forEach( slide => {
+            slide.style.display = 'none';
+        });
+
+        buttons.forEach( button => {
+            button.className = button.className.replace(" active-slide", "");
+        });
+
+        slides[slideIndex - 1].style.display = 'flex';
+        buttons[slideIndex - 1].className += ' active-slide';
+        console.log(slideIndex);
+    }
+
+    setInterval(() => {slideIndex > slides.length ? slideIndex = 1 : slideIndex ; changeSlide(++slideIndex); } , 4000);
+
+    changeSlide(slideIndex);
 
     // if button clicked, make it active and change slide 
 
-    [...buttons].forEach( btn => {
+    buttons.forEach( (btn, index) => {
         btn.addEventListener('click', function() {
-            removeActive(buttons, 'active-slide');
-            this.classList.add('active-slide');
-            let classes = this.classList.value;
-            slidesNames.forEach( name => {
-                if (classes.indexOf(name) > -1 ){
-                    hide(slides);
-                    show(name);
-                }
-            });
+            changeSlide(index + 1);
         });
     });
+
+    arrowRight.addEventListener('click', function(){
+        slideIndex > slides.length ? slideIndex = 1 : slideIndex ;
+        changeSlide(++slideIndex);
+    });
+
+    arrowLeft.addEventListener('click', () => {
+        slideIndex < 1 ? slideIndex = slides.length : slideIndex ;
+        changeSlide(--slideIndex);
+    });
+
 }else {
     // add jquery and slick slider
+
+    arrowRight.parentElement.remove();
 
     const style = document.createElement('link');
     style.rel = "stylesheet";
