@@ -40,6 +40,7 @@ if( window.innerWidth > 500 ){
             changeSlide(index + 1);
         });
     });
+    
 
     arrowRight.addEventListener('click', function(){
         slideIndex > slides.length ? slideIndex = 1 : slideIndex ;
